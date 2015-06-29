@@ -1,13 +1,18 @@
 ﻿@model IEnumerable<Kolekcja.Models.Element>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Zbiór";
 }
 
-<h2>Index</h2>
+<h2>Zbiór</h2>
 
 <p>
-    @Html.ActionLink("Create New", "Create")
+    @using (Html.BeginForm("Index","Elementy",FormMethod.Get))
+    {
+        <p>Podaj tytuł: @Html.TextBox("SearchString") 
+    <input type="submit" value="Wyszukaj" /></p>
+    }
+    @Html.ActionLink("Dodaj nową pozycję", "Create")
 </p>
 <table class="table">
     <tr>
@@ -41,9 +46,9 @@
             @Html.DisplayFor(modelItem => item.Rodzaj)
         </td>
         <td>
-            @Html.ActionLink("Edit", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Details", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Delete", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edytuj", "Edit", new { id=item.ID }) |
+            @Html.ActionLink("Szczegóły", "Details", new { id=item.ID }) |
+            @Html.ActionLink("Usuń pozycję", "Delete", new { id=item.ID })
         </td>
     </tr>
 }

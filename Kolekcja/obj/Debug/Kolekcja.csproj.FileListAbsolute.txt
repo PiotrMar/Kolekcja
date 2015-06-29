@@ -52,3 +52,4 @@ D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.Twitter.xml
 D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.dll
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.pdb
+D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.csprojResolveAssemblyReference.cache

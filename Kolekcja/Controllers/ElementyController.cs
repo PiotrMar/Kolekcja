@@ -15,9 +15,22 @@ namespace Kolekcja.Controllers
         private ElementyDBContext db = new ElementyDBContext();
 
         // GET: Elementy
-        public ActionResult Index()
+        public ActionResult Index(string searchString)
         {
-            return View(db.Elementy.ToList());
+            var elementy = from m in db.Elementy
+                           select m;
+
+            if(!String.IsNullOrEmpty(searchString))
+            {
+                elementy = elementy.Where(s => s.Tytul.Contains(searchString));
+            }
+
+            return View(elementy);
+        }
+        [HttpPost]
+        public string Index(FormCollection fc, string searchString)
+        {
+            return "<h3> From [HttpPost]Index: " + searchString + "</h3>";
         }
 
         // GET: Elementy/Details/5
