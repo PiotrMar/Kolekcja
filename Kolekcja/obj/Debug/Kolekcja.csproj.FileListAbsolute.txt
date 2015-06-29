@@ -50,6 +50,5 @@ D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.OAuth.xml
 D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.Google.xml
 D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.Twitter.xml
 D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
-D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.csprojResolveAssemblyReference.cache
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.dll
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.pdb
