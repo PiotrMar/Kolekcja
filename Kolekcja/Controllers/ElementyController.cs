@@ -15,14 +15,27 @@ namespace Kolekcja.Controllers
         private ElementyDBContext db = new ElementyDBContext();
 
         // GET: Elementy
-        public ActionResult Index(string searchString)
+        public ActionResult Index(string elementGatunek, string searchString)
         {
+            var GatunekLst = new List<string>();
+
+            var GatunekQry = from d in db.Elementy
+                             orderby d.Gatunek
+                             select d.Gatunek;
+            GatunekLst.AddRange(GatunekQry.Distinct());
+            ViewBag.elementGatunek = new SelectList(GatunekLst);
+
             var elementy = from m in db.Elementy
                            select m;
 
             if(!String.IsNullOrEmpty(searchString))
             {
                 elementy = elementy.Where(s => s.Tytul.Contains(searchString));
+            }
+
+            if(!String.IsNullOrEmpty(elementGatunek))
+            {
+                elementy = elementy.Where(x => x.Gatunek == elementGatunek);
             }
 
             return View(elementy);

@@ -9,7 +9,9 @@
 <p>
     @using (Html.BeginForm("Index","Elementy",FormMethod.Get))
     {
-        <p>Podaj tytuł: @Html.TextBox("SearchString") 
+        <p>
+    Wybierz gatunek: @Html.DropDownList("elementGatunek", "All")
+    Podaj tytuł: @Html.TextBox("SearchString") 
     <input type="submit" value="Wyszukaj" /></p>
     }
     @Html.ActionLink("Dodaj nową pozycję", "Create")
