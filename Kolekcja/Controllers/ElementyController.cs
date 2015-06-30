@@ -130,17 +130,32 @@ namespace Kolekcja.Controllers
             return View(element);
         }
 
+        //// POST: Elementy/Delete/5
+        //[HttpPost, ActionName("Delete")]
+        //[ValidateAntiForgeryToken]
+        //public ActionResult DeleteConfirmed(int id)
+        //{
+        //    Element element = db.Elementy.Find(id);
+        //    db.Elementy.Remove(element);
+        //    db.SaveChanges();
+        //    return RedirectToAction("Index");
+        //}
+
+
         // POST: Elementy/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
-        public ActionResult DeleteConfirmed(int id)
+        public ActionResult Delete(FormCollection fcNotUsed, int id=0)
         {
             Element element = db.Elementy.Find(id);
+            if(element==null)
+            {
+                return HttpNotFound();
+            }
             db.Elementy.Remove(element);
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
         protected override void Dispose(bool disposing)
         {
             if (disposing)
