@@ -173,6 +173,10 @@
     <Compile Include="Migrations\201506301522415_Autor.Designer.cs">
       <DependentUpon>201506301522415_Autor.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201506301540208_Walidjacja_pol.cs" />
+    <Compile Include="Migrations\201506301540208_Walidjacja_pol.Designer.cs">
+      <DependentUpon>201506301540208_Walidjacja_pol.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\Elementy.cs" />
@@ -259,6 +263,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201506301522415_Autor.resx">
       <DependentUpon>201506301522415_Autor.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201506301540208_Walidjacja_pol.resx">
+      <DependentUpon>201506301540208_Walidjacja_pol.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
