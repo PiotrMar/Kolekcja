@@ -9,6 +9,8 @@ namespace Kolekcja.Models
         public int ID { get; set; }
         [Display(Name="Tytuł książki: ")]
         public string Tytul { get; set; }
+        [Display(Name="Autor/Artysta/Reżyser: ")]
+        public string Autor { get; set; }
         [Display(Name="Rok wydania: ")]
         [DataType(DataType.Date)]
         [DisplayFormat(DataFormatString="{0:yyyy}",ApplyFormatInEditMode=true)]

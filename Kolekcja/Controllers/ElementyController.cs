@@ -72,7 +72,7 @@ namespace Kolekcja.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Tytul,RokWydania,Gatunek,Rodzaj")] Element element)
+        public ActionResult Create([Bind(Include = "ID,Tytul,Autor,RokWydania,Gatunek,Rodzaj")] Element element)
         {
             if (ModelState.IsValid)
             {
@@ -104,7 +104,7 @@ namespace Kolekcja.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Tytul,RokWydania,Gatunek,Rodzaj")] Element element)
+        public ActionResult Edit([Bind(Include = "ID,Tytul,Autor,RokWydania,Gatunek,Rodzaj")] Element element)
         {
             if (ModelState.IsValid)
             {

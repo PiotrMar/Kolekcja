@@ -10,7 +10,7 @@
     @using (Html.BeginForm("Index","Elementy",FormMethod.Get))
     {
         <p>
-    Wybierz gatunek: @Html.DropDownList("elementGatunek", "All")
+    Wybierz gatunek: @Html.DropDownList("elementGatunek", "Wszystkie")
     Podaj tytuł: @Html.TextBox("SearchString") 
     <input type="submit" value="Wyszukaj" /></p>
     }
@@ -20,6 +20,9 @@
     <tr>
         <th>
             @Html.DisplayNameFor(model => model.Tytul)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Autor)
         </th>
         <th>
             @Html.DisplayNameFor(model => model.RokWydania)
@@ -37,6 +40,9 @@
     <tr>
         <td>
             @Html.DisplayFor(modelItem => item.Tytul)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Autor)
         </td>
         <td>
             @Html.DisplayFor(modelItem => item.RokWydania)
