@@ -10,11 +10,14 @@
     @using (Html.BeginForm("Index","Elementy",FormMethod.Get))
     {
         <p>
-    Wybierz gatunek: @Html.DropDownList("elementGatunek", "Wszystkie")
-    Podaj tytuł: @Html.TextBox("SearchString") 
-    <input type="submit" value="Wyszukaj" /></p>
+            Wybierz gatunek: @Html.DropDownList("elementGatunek", null, "Wszystkie", new { @class = "my_drop_downlist" })
+            | Podaj tytuł: @Html.TextBox("SearchString", null, new { @class = "my_text_box" })
+
+    <input type="submit" value="Wyszukaj" class="btn btn-primary btn-sm"/></p>
     }
     @Html.ActionLink("Dodaj nową pozycję", "Create")
+
+
 </p>
 <table class="table">
     <tr>
@@ -54,9 +57,9 @@
             @Html.DisplayFor(modelItem => item.Rodzaj)
         </td>
         <td>
-            @Html.ActionLink("Edytuj", "Edit", new { id=item.ID }) |
-            @Html.ActionLink("Szczegóły", "Details", new { id=item.ID }) |
-            @Html.ActionLink("Usuń pozycję", "Delete", new { id=item.ID })
+            @Html.ActionLink("Edytuj", "Edit", new { id=item.ID }, new {@class = "btn btn-primary btn-xs"}) |
+            @Html.ActionLink("Szczegóły", "Details", new { id = item.ID }, new { @class = "btn btn-info btn-xs" }) |
+            @Html.ActionLink("Usuń pozycję", "Delete", new { id = item.ID }, new { @class = "btn btn-danger btn-xs" })
         </td>
     </tr>
 }

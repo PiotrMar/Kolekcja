@@ -6814,3 +6814,28 @@ td.visible-print {
     display: none !important;
   }
 }
+
+.my_text_box
+{
+  width:165px;
+  height:30px;
+  padding-left:10px;
+  font-size: 12px;
+  font-weight: normal;
+  border: 2px solid;
+  border-color:cornflowerblue;
+  border-radius: 4px;
+}
+
+.my_drop_downlist
+{
+  width:165px;
+  height:30px;
+  padding-left:10px;
+  font-size: 12px;
+  font-weight: normal;
+  border: 2px solid;
+  border-radius: 4px;
+  border-color:cornflowerblue;
+  
+}

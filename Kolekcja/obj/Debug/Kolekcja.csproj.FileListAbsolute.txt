@@ -52,8 +52,8 @@ D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.Twitter.xml
 D:\ARepo\Kolekcja\Kolekcja\bin\Microsoft.Owin.Security.MicrosoftAccount.xml
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.dll
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.pdb
-D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.csprojResolveAssemblyReference.cache
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.Migrations.Start.resources
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.csproj.GenerateResource.Cache
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.Migrations.Autor.resources
 D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.Migrations.Walidjacja_pol.resources
+D:\ARepo\Kolekcja\Kolekcja\obj\Debug\Kolekcja.csprojResolveAssemblyReference.cache
